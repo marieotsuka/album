@@ -1,0 +1,31 @@
+body{
+	background: blue;
+	color: white;
+	/*font-family: 'Andale Mono', monospace;*/
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+main{
+	display: flex;
+}
+
+.col{
+	flex: 1;
+}
+
+.label{
+	width: 150px;
+	display: block;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	margin-bottom: 1rem;
+}
