@@ -1,7 +1,24 @@
+@font-face {
+  font-family: 'Bespoke';
+  src: url('fonts/Bespoke-69bwTknwA2.eot');
+  src: url('fonts/Bespoke-69bwTknwA2.eot?#iefix') format('embedded-opentype'),
+     url('fonts/Bespoke-69bwTknwA2.woff') format('woff'),
+     url('fonts/Bespoke-69bwTknwA2.ttf') format('truetype'),
+     url('fonts/Bespoke-69bwTknwA2.svg#Bespoke-69bwTknwA2') format('svg');
+}
+
 body{
-	background: blue;
 	color: white;
-	/*font-family: 'Andale Mono', monospace;*/
+	background: #c2c2c2 url('img/echo.png') no-repeat center center;
+	background-size: 500px;
+	font-family: Helvetica, sans-serif;
+	
+}
+
+h1,h2,h3{
+	font-family: 'Bespoke';
+	font-weight: normal;
+	text-align: center;
 }
 
 a{
@@ -11,21 +28,34 @@ a{
 
 main{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .col{
 	flex: 1;
+	min-width: 50%;
+	text-align: center;
 }
 
 .label{
 	width: 150px;
 	display: block;
+	margin: auto;
+	margin-bottom: .5rem;
 }
 
 ul{
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 li{
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 800px){
+	.col{
+		min-width: 100%;
+	}
 }
